@@ -5,49 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>MINIM&#xd8;</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Calculate</title>
 </head>
 
 <body>
-    <header class="header">
-        <h1> <a href="#">MINIM&#xd8;</a></h1>
-        <nav>
-            <ul class="header__nav">
-                <li><a href="#">Lifestyle</a></li>
-                <li><a href="#photodiary">Photodiary</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#" class="no-pad">Travel</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="first__img">
-        <img src="pictures/img-1.png" alt="">
+    <div class="container">
+
+        <section class="calc">
+            <div class="out"></div>
+            <!-- row 1 -->
+            <button class="numbers 7" value="7">7</button>
+            <button class="numbers 8" value="8">8</button>
+            <button class="numbers 9" value="9">9</button>
+            <button class="divide operator">/</button>
+            <!--row 2 -->
+            <button class="numbers 4" value="4">4</button>
+            <button class="numbers 5" value="5">5</button>
+            <button class="numbers 6" value="6">6</button>
+            <button class="multi operator">*</button>
+            <!-- row 3 -->
+            <button class="numbers 1" value="1">1</button>
+            <button class="numbers 2" value="2">2</button>
+            <button class="numbers 3" value="3">3</button>
+            <button class="minus operator">-</button>
+            <!-- row 4 -->
+            <button class="numbers 0" value="0">0</button>
+            <button class="dot numbers operator">.</button>
+            <button class="plus operator">+</button>
+            <button class="percent operator">%</button>
+            <!-- row 5 -->
+            <button class="clear  dark">C</button>
+            <button class="equal  dark">=</button>
+        </section>
     </div>
-    <section id="photodiary" class="photo__diary">
-        <h2 class="thin">
-            PHOTODIARY
-        </h2>
-        <h3>The perfect weekend getaway</h3>
-        <article>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus distinctio expedita quibusdam minima quos
-            corporis fuga excepturi, qui, soluta odio ipsum, praesentium incidunt! Dolore, laudantium? At incidunt eum
-            cumque suscipit!
-            Laborum rerum ex atque nobis autem. Quidem debitis repellendus consequuntur velit tempore esse consequatur
-            placeat perspiciatis, quis voluptatem nesciunt sequi vero corrupti. Modi voluptas ipsum dolor provident
-            magnam, consectetur temporibus!
-            Ad error repudiandae harum, autem corrupti natus voluptatibus facilis quidem fugit veritatis soluta,
-            dignissimos commodi! Et ipsum, provident laudantium quidem quas quasi quaerat cum iste, eos quis alias!
-            Enim, quo?
-        </article>
-        <a href="#comment__section" class="thin">Leave a comment</a>
-    </section>
-    <section id="comment__section">
-        <textarea name="comment" id="comm" cols="30" rows="10">Leave a comment</textarea> <br>
-        <button type="submit" class="comm__send">send the comment</button>
-    </section>
 
-
+    <!-- END -->
+    <script src="script.js"></script>
 </body>
 
 </html>
