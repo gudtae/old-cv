@@ -1,257 +1,53 @@
-@import url(../obnylenie.css);
-/* две точки для выхода из папки в основную */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
-
-/* font-family: 'Inconsolata', monospace;
-font-family: 'Playfair Display', serif;
-font-family: 'Ubuntu', sans-serif; */
-* {
-    background-color: #fff;
-    color: #777;
-    text-decoration: none;
-    border: none;
-    font-size: 14px;
-    font-family: 'Playfair Display', serif;
+body {
+  background-color: #F4F4F8;
+  font-size: 24px;
 }
 
+.container {
+  padding: 0 150px;
+}
 
 button {
-    border: none;
-    background-color: transparent;
+  border: 2px solid #E6E6EA;
+  font-weight: 400;
+  font-size: 18px;
 }
 
-/* text */
-.thin {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    color: #b8b2a4;
-    text-transform: uppercase;
+.calc {
+  background-color: #E6E6EA;
+  width: 322px;
+  border: 2px solid #2AB7CA;
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(6, 80px);
+  justify-content: center;
+  overflow: hidden;
+}
+.calc .out {
+  grid-column: span 4;
+  justify-self: end;
+  align-self: center;
+}
+.calc .clear {
+  background-color: #FE4A49;
+  color: #F4F4F8;
+}
+.calc .equal {
+  grid-column: span 3;
+  background-color: #FED766;
+  color: #F4F4F8;
 }
 
-h3 {
-    color: #626262;
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-    font-weight: bold;
+.numbers:hover {
+  background-color: #2AB7CA;
+  color: #F4F4F8;
 }
 
-article {
-    color: #626262;
+.operator:hover {
+  background-color: #FED766;
+  color: #F4F4F8;
 }
 
-
-/* header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin: 50px 60px 0 100px;
-    text-transform: uppercase;
-}
-
-h1 a {
-    color: black;
-    font-family: 'Inconsolata', monospace;
-    font-size: 30px;
-}
-
-.header__nav li {
-    display: inline-block;
-    padding: 0 50px;
-
-}
-
-
-/* first img */
-/* Large desktops and laptops */
-.first__img>img {
-    max-width: 1062px;
-    max-height: 675px;
-    margin: 0 70px;
-}
-
-.first__img {
-    text-align: center;
-    margin-bottom: 90px;
-}
-
-
-/* photodiary */
-.photo__diary {
-    margin: 0 150px;
-}
-
-.photo__diary h3 {
-    margin: 30px 0;
-}
-
-.photo__diary article {
-    margin-bottom: 45px;
-    text-align: justify;
-}
-
-
-/* comment section */
-#comm {
-    margin: 50px 50px 0px 150px;
-    background-color: rgba(232, 232, 232, 0.58);
-    border: #b8b2a4 2px solid;
-}
-
-.comm__send {
-    border: #b8b2a4 2px solid;
-    margin-left: 150px;
-    transition: all .5s;
-}
-
-.comm__send:hover {
-    background-color: #b8b2a4;
-    color: #626262;
-}
-
-#comm:active {
-    border: #b8b2a4 2px solid;
-}
-
-
-
-
-
-
-/* Portrait tablets and medium desktops */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-        .header__nav li{
-        padding: 0px 25px;
-
-    }
-    .first__img > img{
-        width: 850px;
-
-    }
-    
-
-
-
-}
-
-/* Portrait tablets and small desktops*/
-@media screen and (min-width: 767px) and (max-width: 991px) {
-    #comment__section{
-        margin: 25px 25px 0 40px;
-    }
-    #comm{
-        margin: 0 50px;
-    }
-    .comm__send{
-        margin-left: 50px;
-    }
-    .header{
-        margin: 50px 25px 0 50px;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    h1{
-        margin-bottom: 10px;
-    }
-    .first__img > img{
-        width: 700px;
-        margin: 0 30px;
-    }
-    .photo__diary{
-        margin: 0 90px;
-    }
-}
-
-
-
-
-/* Landscape phones and portrait tablets */
-@media screen and (min-width: 480px) and (max-width: 766px) {
-    #comm{
-        margin: 5px 10px;
-    }
-    #comment__section{
-        margin: 5px 40px;
-    }
-
-    .comm__send{
-        margin-left: 10px;
-    }
-    .header{
-        margin: 25px 10px 0px 10px;
-
-        flex-direction: column;
-
-
-    }
-    h1{
-        margin-bottom: 10px;
-    }
-
-    .header__nav li{
-        padding: 10px 10px;
-        /* width: 25%; */
-    }
-    .first__img > img{
-        min-width: 350px;
-        max-width: 450px;
-        margin: 0 25px;
-    }
-
-    .photo__diary{
-        margin: 0 50px;
-    }
-    .photo__diary h3{
-        text-align: center;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-/* Landscape phones and smaller */
-@media (max-width: 480px) {
-    #comm{
-        margin: 5px 10px;
-    }
-    #comment__section{
-        margin: 5px 40px;
-    }
-
-    .comm__send{
-        margin-left: 10px;
-    }
-
-    .header{
-        flex-direction: column;
-        margin: 20px;
-    }
-    h1{
-        margin-top: 25px;
-        margin-bottom: 10px;
-    }
-    .header__nav li{
-        flex-basis: auto;
-        padding: 5px 10px;
-    }
-
-    .first__img > img{
-        min-width: 250px;
-        max-width: 400px;
-        margin: 0 5px;
-    }
-    .photo__diary{
-        margin: 0 25px;
-    }
-    .photo__diary h3{
-        text-align: center;
-    }
-
-}  
+.dark:hover {
+  filter: grayscale(20%);
+}/*# sourceMappingURL=style.css.map */
