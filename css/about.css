@@ -502,6 +502,7 @@ h2 {
     grid-row: 3/4;
   }
   .about {
+    margin-bottom: 100px;
     margin-top: 66px;
   }
   .about p {
