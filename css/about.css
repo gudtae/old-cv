@@ -482,8 +482,8 @@ h2 {
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(3, -webkit-max-content);
     grid-template-rows: repeat(3, max-content);
-    -moz-column-gap: 250px;
-         column-gap: 250px;
+    -moz-column-gap: 360px;
+         column-gap: 360px;
     padding-top: 65px;
     padding-bottom: 110px;
   }
@@ -496,6 +496,8 @@ h2 {
   .name-tag .name-tag-contact {
     grid-column: 2/3;
     align-self: end;
+    display: flex;
+    justify-content: end;
   }
   .name-tag .location {
     grid-column: 2/3;
