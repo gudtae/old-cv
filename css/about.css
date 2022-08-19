@@ -563,14 +563,14 @@ h2 {
     grid-row: 3/4;
   }
   .name-tag .name-tag-contact {
-    grid-column: 1/2;
+   //HERE
     grid-row: 4/5;
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
   }
   .name-tag .location {
-    grid-column: 1/2;
+    //HERE
     grid-row: 5/6;
     align-items: center;
   }
