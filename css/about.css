@@ -563,6 +563,7 @@ h2 {
     grid-row: 3/4;
   }
   .name-tag .name-tag-contact {
+/*    here  */
     grid-column: 1/2;
     grid-row: 4/5;
     display: flex;
